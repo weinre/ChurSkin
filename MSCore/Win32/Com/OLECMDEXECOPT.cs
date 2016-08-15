@@ -1,0 +1,10 @@
+﻿namespace Win32.Com
+{
+    public enum OLECMDEXECOPT
+    {
+        OLECMDEXECOPT_DODEFAULT,
+        OLECMDEXECOPT_PROMPTUSER,
+        OLECMDEXECOPT_DONTPROMPTUSER,
+        OLECMDEXECOPT_SHOWHELP
+    }
+}

@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A03FF0D7-82DE-4A69-BF1D-70BF3CF9FF92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Windows.Forms</RootNamespace>
+    <AssemblyName>QSkins</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\Desktop\DeYiPai\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\Desktop\DeYiPai\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>sn.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AntiAliasGraphics.cs" />
+    <Compile Include="Areo.cs" />
+    <Compile Include="Form\BackEventArgs.cs" />
+    <Compile Include="CCollapsePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CCollapsePanel.Designer.cs">
+      <DependentUpon>CCollapsePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\CForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\CForm.Designer.cs">
+      <DependentUpon>CForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CComboBox.Designer.cs">
+      <DependentUpon>CComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CComboBoxMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CComboBoxMenu.Designer.cs">
+      <DependentUpon>CComboBoxMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CLine.Designer.cs">
+      <DependentUpon>CLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CMacCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CMacCheckBox.designer.cs">
+      <DependentUpon>CMacCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CImageButton.designer.cs">
+      <DependentUpon>CImageButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CSliderGroupButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CSliderGroupButton.Designer.cs">
+      <DependentUpon>CSliderGroupButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CToolStripDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Definition.cs" />
+    <Compile Include="Color\Share.cs" />
+    <Compile Include="Controls\CListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CListBox.Designer.cs">
+      <DependentUpon>CListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\CMessageBox.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="Color\ColorConverterEx.cs" />
+    <Compile Include="Color\HSL.cs" />
+    <Compile Include="Color\RGB.cs" />
+    <Compile Include="ControlBoxManager.cs" />
+    <Compile Include="ControlPaintEx.cs" />
+    <Compile Include="Controls\CButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CButton.designer.cs">
+      <DependentUpon>CButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CCheckBox.designer.cs">
+      <DependentUpon>CCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CGroupBox.Designer.cs">
+      <DependentUpon>CGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\CMessageBoxBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\CMessageBoxBase.Designer.cs">
+      <DependentUpon>CMessageBoxBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CColorBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CColorBoard.designer.cs">
+      <DependentUpon>CColorBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CPanel.Designer.cs">
+      <DependentUpon>CPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CPictureBox.Designer.cs">
+      <DependentUpon>CPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CProgressBar.Designer.cs">
+      <DependentUpon>CProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CRadioButton.designer.cs">
+      <DependentUpon>CRadioButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CContextMenuStrip.Designer.cs">
+      <DependentUpon>CContextMenuStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CTextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CTextBox.cs">
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Controls\CTextBox.Designer.cs">
+      <DependentUpon>CTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CToolStrip.Designer.cs">
+      <DependentUpon>CToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CToolStripRenderer.cs" />
+    <Compile Include="Controls\CTrackBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CTrackBar.Designer.cs">
+      <DependentUpon>CTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CLabel.Designer.cs">
+      <DependentUpon>CLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums.cs" />
+    <Compile Include="FormRenderEven.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Form\HollowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\HollowForm.Designer.cs">
+      <DependentUpon>HollowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\mdiClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\MessageBoxArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\CSpitButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CSpitButton.designer.cs">
+      <DependentUpon>CSpitButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SkinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SkinFormColorTable.cs" />
+    <Compile Include="Form\SkinMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SkinTools.cs" />
+    <Compile Include="UserControl1.cs" />
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaterEffect.cs" />
+    <Compile Include="WaterEffect1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\CMessageBox.resx">
+      <DependentUpon>CMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CMessageBoxBase.resx">
+      <DependentUpon>CMessageBoxBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CMacCheckBox.resx">
+      <DependentUpon>CMacCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CTextBox.resx">
+      <DependentUpon>CTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\HollowForm.resx">
+      <DependentUpon>HollowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\SysButton\btnClose.png" />
+    <Content Include="Resources\SysButton\btnClose1.png" />
+    <Content Include="Resources\SysButton\btnMax.png" />
+    <Content Include="Resources\SysButton\btnMax1.png" />
+    <Content Include="Resources\SysButton\btnMin.png" />
+    <Content Include="Resources\SysButton\btnMin1.png" />
+    <Content Include="Resources\SysButton\btnRestore.png" />
+    <Content Include="Resources\SysButton\btnRestore1.png" />
+    <None Include="Resources\箭头.png" />
+    <Content Include="VISTOP.ico" />
+    <None Include="churskin.pfx" />
+    <None Include="churskin.snk" />
+    <None Include="Resources\updown.png" />
+    <None Include="Resources\unexpan.png" />
+    <None Include="Resources\uncheck.png" />
+    <None Include="Resources\BackPalace.png" />
+    <None Include="Resources\BorderPalace.png" />
+    <None Include="Resources\checked.png" />
+    <Content Include="Resources\color.png" />
+    <None Include="Resources\expan1.png" />
+    <Content Include="Resources\ff\bar.png" />
+    <Content Include="Resources\ff\border.png" />
+    <Content Include="Resources\ff\borders.png" />
+    <Content Include="Resources\ff\tips.png" />
+    <None Include="Resources\msg\qqmessagebox_error.png" />
+    <None Include="Resources\msg\qqmessagebox_infor.png" />
+    <None Include="Resources\msg\qqmessagebox_ok.png" />
+    <None Include="Resources\msg\qqmessagebox_question.png" />
+    <None Include="Resources\msg\qqmessagebox_warning.png" />
+    <None Include="Resources\icon_tbclose_hover.png" />
+    <None Include="Resources\icon_tbclose_normal.png" />
+    <None Include="Resources\icon_tbclose_press.png" />
+    <Content Include="Resources\icon_arrw.png" />
+    <Content Include="Resources\inputbtn_down.png" />
+    <Content Include="Resources\inputbtn_highlight.png" />
+    <None Include="Resources\line.png" />
+    <None Include="sn.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MSCore\MSCore.csproj">
+      <Project>{3576a6af-6c94-47a8-b048-c45935e6701f}</Project>
+      <Name>MSCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
